@@ -12,7 +12,7 @@
 <style>
 *{margin:0; padding:0; box-sizing:border-box;}
 html,body{height:100%; width:100%; font-family:sans-serif; overflow-x:hidden; scroll-behavior:smooth;}
-body{background:ulr:(MAIN.png);}
+body{background: url(MAIN.png);}
 
 /* Intro Section */
 #firstSection{
@@ -52,8 +52,8 @@ body{background:ulr:(MAIN.png);}
 #weddingVideo.show{opacity:1;}
 
 /* Main Section */
-#mainScrollPage{display:none; position:relative; min-height:100vh; overflow-y:auto; scroll-behavior:smooth; z-index:2;}
-#mainScrollPage::before{content:''; position:fixed; top:0; left:0; right:0; bottom:0; width:100vw; height:100vh; background:url("MAIN.PNG") center/cover no-repeat;z-index:0 ;}
+#mainScrollPage{display:none; position:relative; min-height:100vh; overflow-y:auto; scroll-behavior:smooth; z-index:1;}
+#mainScrollPage::before{content:''; position:fixed; top:0; left:0; right:0; bottom:0; width:100vw; height:100vh; background:url("MAIN.PNG") center/cover no-repeat;z-index:2 ;}
 #mainScrollPage::after{
   content:'';
   position:fixed;
@@ -309,4 +309,3 @@ document.addEventListener('keydown', e=>{
 
 </body>
 </html>
-
