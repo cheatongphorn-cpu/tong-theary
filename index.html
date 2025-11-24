@@ -53,7 +53,7 @@ body{background:#a58a8ab8;}
 
 /* Main Section */
 #mainScrollPage{display:none; position:relative; min-height:100vh; overflow-y:auto; scroll-behavior:smooth; z-index:2;}
-#mainScrollPage::before{content:''; position:fixed; top:0; left:0; right:0; bottom:0; width:100vw; height:100vh; background:url("MAIN.PNG") center/cover no-repeat; z-index:1;}
+#mainScrollPage::before{content:''; position:fixed; top:0; left:0; right:0; bottom:0; width:100vw; height:100vh; background:url("MAIN.PNG") center/cover no-repeat;z-index:0 ;}
 #mainScrollPage::after{
   content:'';
   position:fixed;
@@ -63,7 +63,7 @@ body{background:#a58a8ab8;}
   z-index:9999;
   pointer-events: none; /* Allows scroll and touch */
 }
-.innerContent{position:relative; z-index:1; display:flex; flex-direction:column; align-items:center ; gap:20px; padding:40px 20px;}
+.innerContent{position:relative; z-index:2; display:flex; flex-direction:column; align-items:center ; gap:20px; padding:40px 20px;}
 .innerContent img{width:100%; max-width:500px; object-fit:center;}
 
 /* Map Section */
@@ -309,4 +309,3 @@ document.addEventListener('keydown', e=>{
 
 </body>
 </html>
-
