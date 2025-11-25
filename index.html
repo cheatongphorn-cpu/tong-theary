@@ -45,9 +45,14 @@ body{background: url(MAIN.png);}
 #text {font-family:'Metal',sans-serif; color:#fff; text-shadow:2px 2px 6px rgba(0,0,0,0.6);}
 #countdown{font-size:2.2rem;}
 @keyframes heartbeat{0%,100%{transform:scale(1);}50%{transform:scale(1.1);}25%,75%{transform:scale(1.05);}}
-  
+
+/* Video Section */
+#videoSection{display:none; width:100vw; height:100vh; background:#000; justify-content:center; align-items:center; position:relative;}
+#weddingVideo{width:100%; height:100%; object-fit:contain; opacity:0; transition:opacity 1s;}
+#weddingVideo.show{opacity:1;}
+
 /* Main Section */
-#mainScrollPage{display:none; position:relative; min-height:100vh; overflow-y:auto; scroll-behavior:smooth; z-index:0;}
+#mainScrollPage{display:none; position:relative; min-height:100vh; overflow-y:auto; scroll-behavior:smooth; z-index:1;}
 #mainScrollPage::before{content:''; position:fixed; top:0; left:0; right:0; bottom:0; width:100vw; height:100vh; background:url("MAIN.PNG") center/cover no-repeat;z-index:2 ;}
 #mainScrollPage::after{
   content:'';
@@ -125,6 +130,11 @@ body{background: url(MAIN.png);}
     <div id="text">ថ្ងៃអាទិត្យ ទី១៤ ខែធ្នូ ឆ្នាំ២០២៥</div>
     <div id="countdown"></div>
   </div>
+</div>
+
+<!-- Video -->
+<div id="videoSection">
+  <video id="weddingVideo" src="IMG_8022.MOV"></video>
 </div>
 
 <!-- Main -->
@@ -299,5 +309,3 @@ document.addEventListener('keydown', e=>{
 
 </body>
 </html>
-
-
